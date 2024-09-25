@@ -21,6 +21,7 @@ namespace Project1Portfolio.Controllers
         { 
         var value=context.Message.Where(x => x.Messageid==id).FirstOrDefault();
         return View(value);
+            
         }
         public ActionResult MessageStatusChangeToTrue(int id)
         {
